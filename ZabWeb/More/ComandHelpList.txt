@@ -1,0 +1,16 @@
+----------------------
+|/SQL
+|/Переменные в connect.php
+| <?php
+|  $host = 'localhost';
+|  $database = '';
+|  $user = 'root';
+|  $password = 'root';
+|  ?>
+|/Подключение в index.php
+|  require_once 'connect.php'
+|/Интеграция переменных
+|  $link = mysqli_connect($host, $user, $password, $database) 
+|      or die("Ошибка " . mysqli_error($link));
+|  mysqli_close($link);
+----------------------
